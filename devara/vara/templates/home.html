@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+     
+</head> 
+<body>
+    <div class="g">
+    {% for x in z %}
+    
+        <div class="h">
+            <h2>{{x.top}}</h2>
+            <div class="j">
+                <img src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/Z-WHgqd_TeJxSuha8aZ5WpyLcX8/AAAABdIFYfkylotuQsosH1WlGXHoouJSR59IKXL-xHz1EBGnDra3h7PiJ0E7Oe8wZzKk0hpHSKQGHi7VrGSs64kozAD0u9dXXKO-T4SM.jpg?r=33e" alt="loading...">
+            </div>
+            <h4>TYPE:{{x.course}}</h4>
+            <h4>PRICE:{{x.fees}}</h4>
+            <a href="www.google.com"><button>ADD TO CART</button></a>
+        </div>
+    
+    {% endfor %}
+</div>
+</body>
+</html>
